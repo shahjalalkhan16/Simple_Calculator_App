@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FA2B51"
+        android:text="Calculator App"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input1"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/num1EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your first input"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Input2"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/num2EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter your Second input"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select operator"
+        android:textSize="16sp"/>
+ <GridLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:columnCount="2">
+
+     <Button
+         android:id="@+id/addButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="+"
+         android:textSize="20sp"
+         android:background="@drawable/standard_button_background"
+         android:textColor="@color/white"
+         android:layout_marginLeft="30pt"
+         android:layout_marginRight="20pt"/>
+
+     <Button
+         android:id="@+id/subtractButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="-"
+         android:textSize="20sp"
+         android:background="@drawable/standard_button_background"
+         android:textColor="@color/white"
+         android:layout_marginLeft="10pt"
+         android:layout_marginRight="10pt"
+         app:layout_constraintEnd_toStartOf="@+id/multiplyButton"
+         app:layout_constraintStart_toEndOf="@+id/addButton"
+         app:layout_constraintTop_toBottomOf="@+id/num2EditText" />
+
+     <Button
+         android:id="@+id/multiplyButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="x"
+         android:textSize="20sp"
+         android:background="@drawable/standard_button_background"
+         android:textColor="@color/white"
+         android:layout_marginLeft="30pt"
+         android:layout_marginRight="20pt"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/num2EditText" />
+
+     <Button
+         android:id="@+id/divideButton"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="/"
+         android:textSize="20sp"
+         android:background="@drawable/standard_button_background"
+         android:textColor="@color/white"
+         android:layout_marginLeft="10pt"
+         android:layout_marginRight="10pt"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+ </GridLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:text="Result:  "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divideButton" />
+
+
+
+
+</LinearLayout>
