@@ -1,2 +1,2 @@
 # Simple_Calculator_App
-This is Simple Calculator Android App using Android Studio in Java.
+This is a Simple Calculator Android app using Android Studio in Java.
